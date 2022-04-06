@@ -1,0 +1,45 @@
+.card--container {
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card--container:hover {
+    background-color: pink;
+}
+
+.card--nome {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card--apelido {
+    margin-top: 5px;
+}
+
+.card--empresa {
+    margin-top: 5px;
+}
+
+.card--cargo {
+    margin-top: 5px;
+}
+
+.card--endereço {
+    margin-top: 5px;
+}
+
+.card--email {
+    margin-top: 5px;
+}
+
+.card--fone {
+    margin-top: 5px;
+}
+
+.card--data {
+    margin-top: 5px;
+}
+
