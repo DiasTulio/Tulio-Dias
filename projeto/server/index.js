@@ -34,9 +34,9 @@ app.get("/getCards", (req, res) => {
     let SQL = "SELECT * from contatos";
 
     db.query(SQL, (err, result) => {
-        if(err) comsole.log(err)
+        if(err) console.log(err);
         else res.send(result);
-    })
+    });
 });
 
 app.put("/edit", (req, res) => {
@@ -53,9 +53,9 @@ app.put("/edit", (req, res) => {
     let SQL = "UPDATE contatos SET name = ?, apelido = ?, empresa = ?, cargo = ?, endereço = ?, email = ?, fone = ?, data = ?  WHERE idContatos = ?";
 
     db.query(SQL, [nome, apelido, empresa, cargo, endereço, email, fone, data], (err, result) => {
-        if(err) console.log(err)
+        if(err) console.log(err);
         else res.send(result);
-    })
+    });
 });
 
 app.delete("/delete/:id", (req, res) => {
@@ -64,8 +64,8 @@ app.delete("/delete/:id", (req, res) => {
     db.query(SQL, [id], (err, result) => {
         if(err) console.log(err);
         else res.send(result);
-    })
-})
+    });
+});
 
 app.listen(3001, () => {
     console.log("Servidor Rodando");
